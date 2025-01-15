@@ -1,0 +1,242 @@
+/* Reset some default styles */
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9; /* Light background */
+  color: #333; /* Text color */
+}
+
+/* Header styling */
+header {
+  background-color: #333; /* Dark background for header */
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center; /* Center align the header content */
+}
+
+/* Navigation bar */
+nav {
+  display: inline-block; /* Ensure the nav is inline and can be centered */
+}
+
+/* Navigation list */
+.header {
+  display: flex;
+  justify-content: center; /* Center navigation items horizontally */
+  gap: 2rem; /* Space between items */
+}
+
+/* Navigation links */
+.header li a {
+  text-decoration: none;
+  color: white; /* White text */
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.header li a:hover {
+  color: #f39c12; /* Highlight color on hover */
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for main content */
+main {
+  flex: 1; /* Ensures the main content fills the space between header and footer */
+  padding: 2rem;
+  background-color: #f9f9f9; /* Light background for content */
+  color: #333; /* Text color */
+  margin-left: 50px; /* Reduce margins for better responsiveness */
+  margin-right: 50px; /* Reduce margins for better responsiveness */
+}
+
+/* Form Styling */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Buttons */
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f39c12;
+}
+
+/* General Button Styles */
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Edit Button Style */
+.btn-edit {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #45a049;
+}
+
+/* Delete Button Style */
+.btn-delete {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #e53935;
+}
+
+/* Create New Post Button Style */
+.btn-create {
+  background-color: #2196f3; /* Blue */
+  color: white;
+  margin-bottom: 20px; /* Add space below the button */
+}
+
+.btn-create:hover {
+  background-color: #1976d2;
+}
+
+/* Align the Create New Post Button to the Right */
+.btn-container {
+  display: flex;
+  justify-content: flex-end; /* Align the button to the right */
+  margin-bottom: 20px; /* Space below the button */
+}
+
+/* Welcome section */
+.welcome {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.welcome h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.welcome p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Latest posts section */
+.latest-posts h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+.latest-posts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.latest-posts ul li {
+  margin: 0.5rem 0;
+}
+
+.latest-posts ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.latest-posts ul li a:hover {
+  color: #f39c12; /* Highlight on hover */
+}
+
+/* Footer styling */
+footer {
+  background-color: #333; /* Dark background to match the header */
+  color: white; /* White text */
+  text-align: center; /* Center the content */
+  padding: 1rem 0;
+  font-size: 0.9rem; /* Slightly smaller font size */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle top shadow */
+  position: relative;
+}
+
+/* Add hover effect for links in footer if needed */
+footer a {
+  color: #f39c12; /* Highlight color for links */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Adjust main content layout for smaller screens */
+  main {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* Adjust Welcome section for smaller screens */
+  .welcome h1 {
+    font-size: 2rem;
+  }
+
+  .welcome p {
+    font-size: 1rem;
+  }
+}

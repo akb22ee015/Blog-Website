@@ -1,0 +1,34 @@
+<%- include("partials/header.ejs") %>
+
+<main>
+  
+  <!-- Create New Post Button -->
+  <a href="/create" class="btn-container">
+    <button class="btn btn-create">Create New Post</button>
+  </a>
+  <h1>All Posts</h1><hr>
+  <ul>
+    <% posts.forEach(post => { %>
+    <li>
+      <h2><%= post.title %></h2>
+      <p><%= post.content %></p>
+
+      <!-- Edit Button -->
+      <a href="/edit/<%= post.id %>">
+        <button class="btn btn-edit">Edit</button>
+      </a>
+
+      <!-- Delete Form -->
+      <form
+        action="/delete/<%= post.id %>?_method=DELETE"
+        method="POST"
+        style="display: inline"
+      >
+        <button type="submit" class="btn btn-delete">Delete</button>
+      </form>
+    </li>
+    <% }) %>
+  </ul>
+</main>
+
+<%- include("partials/footer.ejs") %>

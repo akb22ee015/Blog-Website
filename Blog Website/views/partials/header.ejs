@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <!-- Include Header -->
+    <header>
+      <nav>
+        <ul class="header">
+          <li><a href="/" aria-label="Home">Home</a></li>
+          <li><a href="/about" aria-label="Blog">About Us</a></li>
+          <li><a href="/contact" aria-label="Contact Me">Contact Me</a></li>
+        </ul>
+        
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="welcome">
+        <h1>Welcome to the Blog Website</h1>
+        <p>This is a platform where you can explore interesting articles.</p>
+        <hr />
+      </section>
+
+      <!-- <section class="latest-posts">
+        <h2>Latest Posts</h2>
+        <ul>
+          <li><a href="/blog/post-1">Understanding Node.js Basics</a></li>
+          <li><a href="/blog/post-2">Getting Started with Express.js</a></li>
+          <li><a href="/blog/post-3">Why EJS is Great for Templating</a></li>
+        </ul>
+      </section> -->
+    </main>
+    <script>
+      document
+        .querySelector(".menu-toggle")
+        .addEventListener("click", function () {
+          document.querySelector(".mobile-menu").classList.toggle("active");
+        });
+    </script>
+    <!-- Include Footer -->
+  </body>
+</html>
